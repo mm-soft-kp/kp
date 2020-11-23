@@ -9,8 +9,14 @@
     </parent>
     <artifactId>kp.server</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
+    <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.zzq</groupId>
+            <artifactId>kp.biz</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 <!--    <build>-->
 <!--        <outputDirectory>${basedir}/target/classes</outputDirectory>-->
 <!--        <defaultGoal>compile</defaultGoal>-->
