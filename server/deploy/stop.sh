@@ -2,7 +2,7 @@
 #stop.sh
 #!/bin/bash
 echo "Stopping SpringBoot Application"
-pid=`ps -ef | grep kp.server-1.0-SNAPSHOT.jar | grep -v grep | awk '{print $2}'`
+pid=`ps -ef | grep server.jar | grep -v grep | awk '{print $2}'`
 if [ -n "$pid" ]
 then
    kill -9 $pid

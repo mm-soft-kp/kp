@@ -7,6 +7,7 @@
         <artifactId>kp</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <artifactId>kp.server</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
@@ -17,7 +18,25 @@
         </dependency>
     </dependencies>
     <build>
+        <finalName>server</finalName>
         <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>server</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/resources/assemble.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
