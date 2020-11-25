@@ -6,5 +6,6 @@
 #then
 #   mv /data/www/kp/server/kp.server-1.0-SNAPSHOT.jar /data/www/kp/server/kp.server-1.0-SNAPSHOT.jar.`date +%Y%m%d%H%M%S`
 #fi
-BUILD_ID=dontKillMe nohup java -jar /data/www/kp/server/lib/kp.server-1.0-SNAPSHOT.jar &
+source /etc/profile
+java -jar /data/www/kp/server/lib/kp.server-1.0-SNAPSHOT.jar &
 
