@@ -7,5 +7,5 @@
 #   mv /data/www/kp/server/kp.server-1.0-SNAPSHOT.jar /data/www/kp/server/kp.server-1.0-SNAPSHOT.jar.`date +%Y%m%d%H%M%S`
 #fi
 source /etc/profile
-java -jar /data/www/kp/server/lib/kp.server-1.0-SNAPSHOT.jar &
+java -jar /data/www/kp/server/server.jar &
 
